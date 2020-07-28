@@ -4,7 +4,7 @@ import { Container, Description } from './styles';
 
 export default function CategoryItem({ data }) {
     return (
-        <a href={data.url} target="_blanck">
+        <a href={data.url} rel="noopener noreferrer" target="_blank">
             <Container>
                 <Description>
                     <h1>{data.title}</h1>
