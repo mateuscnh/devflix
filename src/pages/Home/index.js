@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container } from './styles.js';
-import Categories from '../Categories';
+import Categories from '../../components/Categories';
 import loadCategories from '../../services/data';
 
 const categories = loadCategories();

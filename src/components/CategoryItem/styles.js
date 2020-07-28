@@ -40,7 +40,7 @@ export const Description = styled.div`
     @media (max-width: 768px){
         width: 100%; 
         h1{
-            font-size: 30px;
+            font-size: 24px;
         }               
     }    
 `;
