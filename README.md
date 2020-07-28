@@ -8,7 +8,7 @@
 
 ## 💻 Project
 
-A collection of youtube videos about programming. Developing during the [Imersão React da Alura](https://www.alura.com.br/imersao-react/), where each student could implement as they wished about the website content.
+A collection of youtube videos about programming. Developing during the [Imersão React da Alura](https://www.alura.com.br/imersao-react/), where each student had to implement an alternative version of Netflix.
 
 </br>
 
