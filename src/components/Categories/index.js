@@ -30,4 +30,4 @@ export default function Categories(props) {
             </Wrapper>
         </Container>
     );
-} 
+}

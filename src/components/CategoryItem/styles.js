@@ -5,23 +5,30 @@ export const Container = styled.div`
     cursor: pointer;
 
     transition: .1s;
-
-    :hover{
-        transform: scale(1.02);
-        box-shadow: 0 10px 30px 2px #111111;
+   
+    :hover :first-child{
+        opacity: 1;
     }
     
     img{
         border-radius: 4px;
         width: 300px;
-        object-fit: cover;   
+        object-fit: cover;    
     }
 `;
 
-// export const Description = styled.div`
-//     position: absolute;
-//     top: 0;
-//     background-color: red;
-//     height: 100%;
-//     width: 150px;
-// `;
+export const Description = styled.div`
+    padding: 10px;
+
+    opacity: 0;
+    position: absolute;
+
+    width: 300px;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .8);
+    border-radius: 4px;
+
+    transition: .2s;  
+`;
+
