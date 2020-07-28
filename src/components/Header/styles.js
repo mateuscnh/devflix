@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const Navbar = styled.nav`
-    position: fixed;
+    position: absolute;
+    background-attachment: fixed;
     width: 100%;
-    padding: 0 2%;
+    padding: 0 4%;
     height: 60px;
 
     display: flex;

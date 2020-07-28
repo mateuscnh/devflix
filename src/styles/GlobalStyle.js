@@ -6,7 +6,11 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+    }
+    body{
+        overflow-x: hidden;
+        background-color: ${props => props.theme.colors.background};
     }
     a{
         color: inherit;
