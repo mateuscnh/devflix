@@ -1,5 +1,7 @@
 <p align="center">
   <img alt="Logo do projeto" width="150px" src="./src/assets/logo.png" />
+  </br>
+  <a href="https://devflix.mateuscnh.vercel.app/">Vercel deploy</a>
 </p>
 
 </br>
@@ -20,4 +22,4 @@ Developed with the following technologies:
 </br>
 
 ## License/Licença do Projeto
-[MIT License](./LICENSE)
+MIT License
