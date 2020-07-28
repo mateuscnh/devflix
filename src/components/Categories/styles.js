@@ -15,8 +15,4 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
     margin-top: 30px;
-    height: 180px;
-
-    display: flex;
-    justify-content: left;
 `;
