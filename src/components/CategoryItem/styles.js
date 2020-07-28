@@ -4,21 +4,27 @@ export const Container = styled.div`
     position: relative; 
     cursor: pointer;
 
+    width: 100%;
+
     transition: .1s;
    
     :hover :first-child{
-        opacity: 1;
+        opacity: 1;   
     }
     
     img{
-        border-radius: 4px;
+        border-radius: 6px;
         width: 300px;
-        object-fit: cover;    
+        object-fit: cover;
+
+        @media (max-width: 768px){
+            width: 100%;                
+        } 
     }
 `;
 
 export const Description = styled.div`
-    padding: 10px;
+    padding: 10px 4%;
 
     opacity: 0;
     position: absolute;
@@ -30,5 +36,12 @@ export const Description = styled.div`
     border-radius: 4px;
 
     transition: .2s;  
+
+    @media (max-width: 768px){
+        width: 100%; 
+        h1{
+            font-size: 30px;
+        }               
+    }    
 `;
 

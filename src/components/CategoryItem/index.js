@@ -8,7 +8,6 @@ export default function CategoryItem({ data }) {
             <Container>
                 <Description>
                     <h1>{data.title}</h1>
-                    <p>Player</p>
                 </Description>
                 <img src={data.imageURL} alt="" />
             </Container >
