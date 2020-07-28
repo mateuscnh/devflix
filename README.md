@@ -14,6 +14,7 @@ Projeto desenvolvido durante a [Imersão React da Alura](https://www.alura.com.b
 Developed with the following technologies:
 
 - ReactJS
+- React Slick
 - Styled Components
 
 ## License/Licença do Projeto
