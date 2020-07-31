@@ -4,9 +4,19 @@ import { FaPlus } from 'react-icons/fa';
 import { Container, Button } from './styles';
 import Input from '../../components/Input';
 
+import api from '../../services/api';
+
 export default function () {
-    function handleClick(e) {
+    async function handleClick(e) {
         e.preventDefault();
+        const nameCategory = document.querySelector('.nameCategory').value;
+
+        const data = {
+            "title": `${nameCategory}`
+        }
+
+        await api.post('/categories', data).catch((err) => console.log('Error:', err));
+
         document.querySelector('.newCategory').style.display = 'none';
     }
 
