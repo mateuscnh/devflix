@@ -29,7 +29,7 @@ export default function Category(props) {
         <Container>
             <header>
                 <h1>{props.title}</h1>
-                <FaPlus className="newVideo" size={20} onClick={handleClick} />
+                <FaPlus className="addVideo" size={20} onClick={handleClick} />
             </header>
             <Wrapper>
                 <Slider>

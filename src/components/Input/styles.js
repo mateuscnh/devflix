@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
-    margin-top: 60px;
+    margin-top: 40px;
     position: relative;  
 
 `

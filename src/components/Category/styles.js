@@ -14,7 +14,7 @@ export const Container = styled.div`
         padding: 6px;
         color: #fff;       
     }
-    .newVideo{
+    .addVideo{
         margin-left: 50px;
         cursor: pointer;
 

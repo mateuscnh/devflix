@@ -1,8 +1,8 @@
 import React from 'react';
-import { FaPlus } from 'react-icons/fa';
 
-import { Container, Button } from './styles';
+import { Container } from './styles';
 import Input from '../../components/Input';
+import Button from '../../components/Button';
 
 import api from '../../services/api';
 
@@ -32,7 +32,7 @@ export default function (props) {
             <h1>Nova Categoria</h1>
             <form onSubmit={handleClick}>
                 <Input type="text" labelName="Nome" />
-                <Button type="submit" ><FaPlus /></Button>
+                <Button type="submit" />
             </form>
         </Container>
     );

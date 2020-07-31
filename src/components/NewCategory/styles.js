@@ -26,22 +26,3 @@ export const Container = styled.div`
 
 `;
 
-export const Button = styled.button`
-    width: 40px;
-    height: 40px;
-    border: none;
-    color: ${props => props.theme.colors.text};
-    background-color: ${props => props.theme.colors.primary};
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    outline: none;
-
-    transition: .2s;
-
-    :hover{
-        opacity: .8;
-    }
-
-`
-
