@@ -6,15 +6,15 @@ import Slider from '../Slider';
 
 import api from '../../services/api';
 
-export default function Categories(props) {
+export default function Category(props) {
     const [videos, setVideos] = useState([]);
 
     useEffect(() => {
         async function searchVideosByCategory() {
-            const response = await api.get('/videos');
+            const { data } = await api.get('/videos');
 
-            const filterVideos = video => video.category_id === props.data;
-            setVideos(response.data.filter(filterVideos));
+            const filterVideos = video => video.category_id === props.categoryId;
+            setVideos(data.filter(filterVideos));
         }
 
         searchVideosByCategory();

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { Container } from './styles.js';
 
-import Categories from '../../components/Categories';
+import Category from '../../components/Category';
 
 import api from '../../services/api';
 
@@ -21,7 +21,7 @@ export default function Home() {
     return (
         <Container>
             {categories.map(category => (
-                <Categories key={category.id} title={category.title} data={category.id} />
+                <Category key={category.id} title={category.title} categoryId={category.id} />
             ))}
         </Container>
     );
