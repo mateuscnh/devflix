@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-import { Container, Select } from './styles';
+import BoardContext from '../../pages/Home/context';
+
+import { Container, Select, NewCategory } from './styles';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -8,39 +10,57 @@ import Button from '../../components/Button';
 import api from '../../services/api';
 
 export default function (props) {
-    async function handleClick(e) {
+    const { categories } = useContext(BoardContext);
+
+    async function handleSubmit(e) {
         e.preventDefault();
-        const nameCategory = document.querySelector('.nameCategory');
+        const videoTitle = document.querySelector('.videoTitle');
+        const videoURL = document.querySelector('.VideoURL');
+        const videoCategory = document.querySelector('.videoCategory');
+        const videoID = videoURL.value.split('=').slice(1);
+
+        const category = await api.get(`/categories?title=${videoCategory.value}`)
 
         const data = {
-            "title": `${nameCategory.value}`
+            category_id: category.data[0].id,
+            title: `${videoTitle.value}`,
+            url: `https://www.youtube.com/watch?v=${videoID}`,
+            imageURL: `https://img.youtube.com/vi/${videoID}/maxresdefault.jpg`
         }
 
-        let newData = '';
+        console.log(data)
 
-        // await api.post('/categories', data).then((res) => {
+
+        // await api.post('/videos', data).then((res) => {
         //     newData = Object.assign(res.data, data);
         // }).catch((err) => console.log(err));
 
-        // props.setCategories([].concat(props.categories, newData));
+        // props.setVideos([].concat(props.videos, newData));
 
         // nameCategory.value = '';
         document.querySelector('.newVideo').style.display = 'none';
     }
 
+    function handleClick() {
+        console.log(1)
+        console.log(document.querySelector('.newCategory'))
+        document.querySelector('.newCategory').style.display = 'block';
+    }
+
     return (
         <Container className="newVideo">
             <h1>Novo Vídeo</h1>
-            <form onSubmit={handleClick}>
-                <Input type="text" labelName="Título" />
-                <Input type="text" labelName="Url" />
+            <form onSubmit={handleSubmit}>
                 <p>Categoria</p>
-                <Select>
-                    {props.categories.map(category => (
+                <Select className="videoCategory">
+                    {categories.map(category => (
                         <option key={category.id}>{category.title}</option>
                     ))}
                 </Select>
-                <Button type="submit" ></Button>
+                <NewCategory onClick={handleClick} />
+                <Input className="videoTitle" type="text" labelName="Título" />
+                <Input className="VideoURL" type="text" labelName="Url" />
+                <Button type="submit"></Button>
             </form>
         </Container>
     );

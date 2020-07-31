@@ -8,7 +8,7 @@ import { Navbar, NewButton } from './styles';
 
 export default function Header() {
     function handleClick() {
-        document.querySelector('.newCategory').style.display = 'block';
+        document.querySelector('.newVideo').style.display = 'block';
     }
 
     return (

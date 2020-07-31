@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FaPlus } from 'react-icons/fa';
 
 export const Container = styled.div`
     padding: 50px;
@@ -28,16 +29,30 @@ export const Container = styled.div`
             position: relative;
             top: 30px;
             left: 8px;
-            
         }  
     }
 `;
 
+export const NewCategory = styled(FaPlus)`
+    padding: 10px;
+    position: relative;
+    bottom: -13px;
+    height: 38px;
+    border-radius: 4px;
+    width: 18%;
+    background-color: ${props => props.theme.colors.primary};
+    cursor: pointer;
+    :hover{
+        opacity: .8;
+    }
+`
+
 export const Select = styled.select`
+    margin-right: 2%;
     margin-top: 40px;
     font-size: 16px;
     padding: 6px;
-    width: 100%;
+    width: 80%;
     height: 40px;
     background: rgba(0, 0, 0, .5);
     border: none;   
