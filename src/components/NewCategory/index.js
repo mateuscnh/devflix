@@ -16,23 +16,27 @@ export default function () {
         e.preventDefault();
         const categoryName = document.querySelector('.categoryName');
 
-        const data = {
-            title: `${categoryName.value}`
+        if (categoryName.value !== '') {
+            const data = {
+                title: `${categoryName.value}`
+            }
+
+            await fetch(URL, {
+                method: "post",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }).then(res => res.json())
+                .then(data => setCategories([].concat(categories, data)))
+                .catch(err => console.log(err))
+
+            document.querySelector('.newCategory').style.display = 'none';
+            categoryName.value = '';
+        } else {
+            alert('Informe algum nome');
         }
-
-        await fetch(URL, {
-            method: "post",
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        }).then(res => res.json())
-            .then(data => setCategories([].concat(categories, data)))
-            .catch(err => console.log(err))
-
-        document.querySelector('.newCategory').style.display = 'none';
-        categoryName.value = '';
     }
 
     return (

@@ -27,6 +27,9 @@ export default function ({ className, zIndex, children }) {
             if (e.target.className) {
                 if ((e.target.className).indexOf(className) !== -1) {
                     document.querySelector(`.${className}`).style.display = 'none';
+                    if (className === 'newVideo') {
+                        document.querySelector('body').style.overflow = 'auto';
+                    }
                 }
             }
         }
