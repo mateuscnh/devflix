@@ -95,7 +95,7 @@ export default function () {
                     </Select>
                     <NewCategory onClick={handleClick} />
                     <Input className="videoTitle" type="text" labelName="Título" />
-                    <Input className="VideoURL" type="text" labelName="Url" />
+                    <Input className="VideoURL" type="text" labelName="URL" />
                     <Button type="submit"></Button>
                 </form>
             </Container>
