@@ -8,7 +8,6 @@ export default function Routes() {
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Home} />
-                {/* <Route component={() => (<div>Error 404</div>)} /> */}
             </Switch>
         </BrowserRouter>
     );

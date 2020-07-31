@@ -8,6 +8,7 @@ export const ChevronLeft = styled(FaChevronLeft)`
 
     position: absolute;
     z-index: 1;
+    left: -30px;
 
     color: ${props => props.color};
 
