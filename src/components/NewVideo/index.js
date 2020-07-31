@@ -9,10 +9,11 @@ import Button from '../../components/Button';
 
 import api from '../../services/api';
 
-export default function (props) {
-    const { categories } = useContext(BoardContext);
+export default function () {
+    const { categories, setCategories } = useContext(BoardContext);
 
     async function handleSubmit(e) {
+        const URL = 'http://localhost:3000/videos';
         e.preventDefault();
         const videoTitle = document.querySelector('.videoTitle');
         const videoURL = document.querySelector('.VideoURL');
@@ -22,28 +23,36 @@ export default function (props) {
         const category = await api.get(`/categories?title=${videoCategory.value}`)
 
         const data = {
-            category_id: category.data[0].id,
+            categoryId: category.data[0].id,
             title: `${videoTitle.value}`,
             url: `https://www.youtube.com/watch?v=${videoID}`,
             imageURL: `https://img.youtube.com/vi/${videoID}/maxresdefault.jpg`
         }
 
-        console.log(data)
+        await fetch(URL, {
+            method: "post",
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(async data => {
+                const newCategories = await categories.map(category => {
+                    if (category.id === data.categoryId) {
+                        category.videos.push(data)
+                    }
+                    return category;
+                });
+                setCategories(newCategories);
+            })
+            .catch(err => console.log(err))
 
-
-        // await api.post('/videos', data).then((res) => {
-        //     newData = Object.assign(res.data, data);
-        // }).catch((err) => console.log(err));
-
-        // props.setVideos([].concat(props.videos, newData));
-
-        // nameCategory.value = '';
         document.querySelector('.newVideo').style.display = 'none';
     }
 
     function handleClick() {
-        console.log(1)
-        console.log(document.querySelector('.newCategory'))
         document.querySelector('.newCategory').style.display = 'block';
     }
 

@@ -10,7 +10,6 @@ import NewVideo from '../../components/NewVideo';
 
 export default function Home() {
     const [categories, setCategories] = useState([]);
-    // const [videos, setVideos] = useState([]);
 
     useEffect(() => {
         async function loadCategories() {
@@ -29,9 +28,10 @@ export default function Home() {
             <Container className="home">
                 <NewCategory />
                 <NewVideo />
-                {categories.map(category => (
-                    <Category key={category.id} title={category.title} videos={category.videos} />
-                ))}
+                {categories &&
+                    categories.map(category => (
+                        <Category key={category.id} title={category.title} videos={category.videos} />
+                    ))}
             </Container>
         </BoardContext.Provider>
     );

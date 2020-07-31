@@ -3,7 +3,7 @@ import { FaPlus } from 'react-icons/fa';
 
 export const Container = styled.div`
     padding: 50px;
-    display: block;
+    display: none;
     width: 510px;
 
     position: absolute;
