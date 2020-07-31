@@ -6,17 +6,24 @@ import Input from '../../components/Input';
 
 import api from '../../services/api';
 
-export default function () {
+export default function (props) {
     async function handleClick(e) {
         e.preventDefault();
-        const nameCategory = document.querySelector('.nameCategory').value;
+        const nameCategory = document.querySelector('.nameCategory');
 
         const data = {
-            "title": `${nameCategory}`
+            "title": `${nameCategory.value}`
         }
 
-        await api.post('/categories', data).catch((err) => console.log('Error:', err));
+        let newData = '';
 
+        await api.post('/categories', data).then((res) => {
+            newData = Object.assign(res.data, data);
+        }).catch((err) => console.log(err));
+
+        props.setCategories([].concat(props.categories, newData));
+
+        nameCategory.value = '';
         document.querySelector('.newCategory').style.display = 'none';
     }
 

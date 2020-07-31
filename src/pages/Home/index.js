@@ -21,7 +21,7 @@ export default function Home() {
 
     return (
         <Container>
-            <NewCategory />
+            <NewCategory categories={categories} setCategories={setCategories} />
             {categories.map(category => (
                 <Category key={category.id} title={category.title} categoryId={category.id} />
             ))}

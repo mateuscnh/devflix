@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { FaPlus } from 'react-icons/fa';
 
 import { Container, Wrapper } from './styles.js';
 import CategoryItem from './CategoryItem';
@@ -18,11 +19,18 @@ export default function Category(props) {
         }
 
         searchVideosByCategory();
-    }, [])
+    }, []);
+
+    async function handleClick() {
+        console.log('new')
+    }
 
     return (
         <Container>
-            <header><h1>{props.title}</h1></header>
+            <header>
+                <h1>{props.title}</h1>
+                <FaPlus className="newVideo" size={20} onClick={handleClick} />
+            </header>
             <Wrapper>
                 <Slider>
                     {videos.map(video =>

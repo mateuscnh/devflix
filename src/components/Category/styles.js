@@ -5,11 +5,27 @@ export const Container = styled.div`
     
     header{
         height: 20px;
+        display: flex;
+        align-items: center;
+        color: ${props => props.theme.colors.text};
     }
     h1{
         font-size: 20px;
         padding: 6px;
-        color: #fff;
+        color: #fff;       
+    }
+    .newVideo{
+        margin-left: 50px;
+        cursor: pointer;
+
+        transition: .2s;
+
+        opacity: .5;
+
+        :hover{
+            opacity: .4;
+            transform: scale(.9);
+        }
     }
 `;
 

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
     margin-top: 60px;
@@ -32,9 +32,8 @@ export const Input = styled.input`
         border: 2px solid ${props => props.theme.colors.primary};
         border-top: none;
     }
-    
+
     :focus + ${Label} {
         transform: scale(.9) translate(-6px, -36px);   
     }
-
 `
