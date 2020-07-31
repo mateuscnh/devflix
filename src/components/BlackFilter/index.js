@@ -22,6 +22,7 @@ export const BlackFilter = styled.div`
 `;
 
 export default function ({ className, zIndex, children }) {
+    // Filters the mouse events for the 'BlackFilter'
     function handleClick(e) {
         if (typeof (e.target.className) !== 'object') {
             if (e.target.className) {

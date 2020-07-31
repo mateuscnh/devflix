@@ -9,8 +9,9 @@ export default function Category(props) {
         if (a.id > b.id) {
             return -1;
         }
-        return 1
+        return 1;
     }
+
     return (
         <Container>
             <header>

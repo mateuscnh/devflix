@@ -8,12 +8,14 @@ import BlackFilter from '../../components/BlackFilter';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
+import { baseURL } from '../../utils/baseURL';
+
 export default function () {
     const { categories, setCategories } = useContext(BoardContext);
 
     async function handleSubmit(e) {
-        const URL = 'http://localhost:3000/categories';
         e.preventDefault();
+
         const categoryName = document.querySelector('.categoryName');
 
         if (categoryName.value !== '') {
@@ -21,7 +23,7 @@ export default function () {
                 title: `${categoryName.value}`
             }
 
-            await fetch(URL, {
+            await fetch(`${baseURL}/categories`, {
                 method: "post",
                 headers: {
                     'Accept': 'application/json',

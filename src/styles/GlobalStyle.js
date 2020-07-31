@@ -6,6 +6,7 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Open Sans', sans-serif;
+        outline: none;
     }
     body{
         background-color: ${props => props.theme.colors.background};

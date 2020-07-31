@@ -1,8 +1,18 @@
 import React from 'react';
-
-import Slider from './styles';
+import styled from 'styled-components';
 
 import Chevron from './Chevron';
+import Slick from 'react-slick';
+
+const Slider = styled(Slick)`
+
+    .slick-arrow::before{
+        display: block;
+        font-size: 26px;
+        height: 100%;
+        background-color: red;
+    }
+`;
 
 export default function ({ children }) {
     return (

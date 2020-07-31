@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
-import { Container } from './styles.js';
+import styled from 'styled-components';
 
 import BoardContext from './context';
 
@@ -8,14 +7,20 @@ import Category from '../../components/Category';
 import NewCategory from '../../components/NewCategory';
 import NewVideo from '../../components/NewVideo';
 
+import { baseURL } from '../../utils/baseURL';
+
+const Container = styled.div`
+    padding: 50px 4%;
+    min-height: 100vh;
+`
+
 export default function Home() {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
         async function loadCategories() {
-            const URL = 'http://localhost:3000/categories?_embed=videos';
 
-            await fetch(URL)
+            await fetch(`${baseURL}/categories?_embed=videos`)
                 .then(response => response.json())
                 .then(data => setCategories(data));
         }
