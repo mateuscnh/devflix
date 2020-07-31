@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { FaPlus } from 'react-icons/fa';
 
 export const Navbar = styled.nav`
     width: 100%;
@@ -13,21 +14,25 @@ export const Navbar = styled.nav`
     img{
         height: 30px;
         margin: 15px 0;
-    }
 
-    a{
-        margin: 14px 0;
-        padding: 6px;
-
-        color: #fff;
-        
-        background-color: ${props => props.theme.colors.primary};
-        border-radius: 50%;
-
-        transition: .2s;
-
-        :hover{
-            opacity: .8;
-        }
+        cursor: pointer;
     }
 `;
+
+export const NewButton = styled(FaPlus)`
+    margin: 14px 0;
+    padding: 6px;
+
+    color: #fff;
+        
+    background-color: ${props => props.theme.colors.primary};
+    border-radius: 50%;
+
+    transition: .2s;
+
+    cursor: pointer;
+
+    :hover{
+        opacity: .8;
+    }
+`

@@ -1,15 +1,15 @@
 import React from 'react';
-import { FaPlus } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/logo.png';
 
-import { Navbar } from './styles';
+import { Navbar, NewButton } from './styles';
 
 export default function Header() {
     return (
         <Navbar>
-            <img src={Logo} alt="" />
-            <a href="https://github.com/mateuscnh" target="_blanck"><FaPlus size={20} /></a>
+            <Link to="/"><img src={Logo} alt="" /></Link>
+            <Link to="/new"><NewButton size={30} /></Link>
         </Navbar>
     );
 }
