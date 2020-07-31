@@ -1,12 +1,19 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const animation = keyframes`
+    to{
+        opacity: 1;
+    } 
+`
 
 export const Container = styled.div` 
     position: relative; 
     cursor: pointer;
 
-    width: 100%;
+    transition: .2s;
 
-    transition: .1s;
+    opacity: 0;
+    animation: ${animation} 2s 0s both;
    
     :hover :first-child{
         opacity: 1;   

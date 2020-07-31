@@ -1,7 +1,17 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const animation = keyframes`
+    to{
+        opacity: 1;
+    } 
+`
 
 export const Container = styled.div`
-    margin-top: 40px;    
+    margin-top: 40px;  
+
+    transition: .2s;
+    opacity: 0;
+    animation: ${animation} 2s 0s both;  
     
     header{
         height: 20px;
