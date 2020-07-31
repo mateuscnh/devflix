@@ -3,10 +3,12 @@ import React, { useContext } from 'react';
 import BoardContext from '../../pages/Home/context';
 
 import { Container } from './styles';
+
+import BlackFilter from '../../components/BlackFilter';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-export default function (props) {
+export default function () {
     const { categories, setCategories } = useContext(BoardContext);
 
     async function handleSubmit(e) {
@@ -34,12 +36,14 @@ export default function (props) {
     }
 
     return (
-        <Container className="newCategory">
-            <h1>Nova Categoria</h1>
-            <form onSubmit={handleSubmit}>
-                <Input className="categoryName" type="text" labelName="Nome" />
-                <Button type="submit" />
-            </form>
-        </Container>
+        <BlackFilter className="newCategory" zIndex={2}>
+            <Container>
+                <h1>Nova Categoria</h1>
+                <form onSubmit={handleSubmit}>
+                    <Input className="categoryName" type="text" labelName="Nome" />
+                    <Button type="submit" />
+                </form>
+            </Container>
+        </BlackFilter>
     );
 }

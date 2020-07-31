@@ -4,6 +4,7 @@ import BoardContext from '../../pages/Home/context';
 
 import { Container, Select, NewCategory } from './styles';
 
+import BlackFilter from '../../components/BlackFilter';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
@@ -20,7 +21,7 @@ export default function () {
         const videoCategory = document.querySelector('.videoCategory');
         const videoID = videoURL.value.split('=').slice(1);
 
-        const category = await api.get(`/categories?title=${videoCategory.value}`)
+        const category = await api.get(`/categories?title=${videoCategory.value}`);
 
         const data = {
             categoryId: category.data[0].id,
@@ -41,7 +42,11 @@ export default function () {
             .then(async data => {
                 const newCategories = await categories.map(category => {
                     if (category.id === data.categoryId) {
-                        category.videos.push(data)
+                        if (category.videos) {
+                            category.videos.push(data)
+                        } else {
+                            category.videos = [].concat([], data);
+                        }
                     }
                     return category;
                 });
@@ -53,24 +58,26 @@ export default function () {
     }
 
     function handleClick() {
-        document.querySelector('.newCategory').style.display = 'block';
+        document.querySelector('.newCategory').style.display = 'grid';
     }
 
     return (
-        <Container className="newVideo">
-            <h1>Novo Vídeo</h1>
-            <form onSubmit={handleSubmit}>
-                <p>Categoria</p>
-                <Select className="videoCategory">
-                    {categories.map(category => (
-                        <option key={category.id}>{category.title}</option>
-                    ))}
-                </Select>
-                <NewCategory onClick={handleClick} />
-                <Input className="videoTitle" type="text" labelName="Título" />
-                <Input className="VideoURL" type="text" labelName="Url" />
-                <Button type="submit"></Button>
-            </form>
-        </Container>
+        <BlackFilter className="newVideo" zIndex={1}>
+            <Container >
+                <h1>Novo Vídeo</h1>
+                <form onSubmit={handleSubmit}>
+                    <p>Categoria</p>
+                    <Select className="videoCategory">
+                        {categories.map(category => (
+                            <option key={category.id}>{category.title}</option>
+                        ))}
+                    </Select>
+                    <NewCategory onClick={handleClick} />
+                    <Input className="videoTitle" type="text" labelName="Título" />
+                    <Input className="VideoURL" type="text" labelName="Url" />
+                    <Button type="submit"></Button>
+                </form>
+            </Container>
+        </BlackFilter>
     );
 }

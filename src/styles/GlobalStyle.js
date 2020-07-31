@@ -9,7 +9,6 @@ export default createGlobalStyle`
         font-family: 'Open Sans', sans-serif;
     }
     body{
-        overflow-x: hidden;
         background-color: ${props => props.theme.colors.background};
     }
     a{

@@ -2,18 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     padding: 50px;
-    display: none;
     width: 510px;
-
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
 
     color: ${props => props.theme.colors.text};
     background-color: ${props => props.theme.colors.background};
     border-radius: 20px;
-    box-shadow: 0 10px 30px 2px #000;
+    box-shadow: 0 10px 20px 2px #000;
 
     form{
         display: flex;
@@ -23,6 +17,7 @@ export const Container = styled.div`
             width: 360px;
         }
     }
-
 `;
+
+
 

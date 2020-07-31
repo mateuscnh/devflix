@@ -25,7 +25,7 @@ export default function Home() {
 
     return (
         <BoardContext.Provider value={{ categories, setCategories }}>
-            <Container className="home">
+            <Container>
                 <NewCategory />
                 <NewVideo />
                 {categories &&

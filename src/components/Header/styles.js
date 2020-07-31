@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { FaPlus } from 'react-icons/fa';
 
 export const Navbar = styled.nav`
+    position: fixed;
+    z-index: 1;
     width: 100%;
     padding: 0 4%;
     height: 60px;
@@ -10,6 +12,7 @@ export const Navbar = styled.nav`
     justify-content: space-between;
 
     background-color: ${props => props.theme.colors.header};
+    box-shadow: 0 10px 50px 2px #111;
 
     img{
         height: 30px;

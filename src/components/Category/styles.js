@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    margin-top: 26px;
+    margin-top: 40px;    
     
     header{
         height: 20px;
@@ -30,5 +30,5 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    margin-top: 30px;
+    margin-top: 20px;
 `;
