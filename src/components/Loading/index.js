@@ -7,11 +7,18 @@ const SpinAnimate = keyframes`
 `
 
 const Container = styled.div`
-position: absolute;
-    z-index: 10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%); 
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+
+    display: grid;
+    place-items: center;
+
+    background-color: rgba(0, 0, 0, .4);
 `
 
 const Loader = styled.div`

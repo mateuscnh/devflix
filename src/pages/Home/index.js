@@ -14,7 +14,7 @@ import { baseURL } from '../../utils/baseURL';
 const Container = styled.div`
     padding: 50px 0;
     padding-left: 4%;
-    min-height: 100vh;
+    min-height: 60vh;
 `
 
 export default function Home() {
