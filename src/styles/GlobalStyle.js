@@ -9,6 +9,7 @@ export default createGlobalStyle`
         outline: none;
     }
     body{
+        overflow-x: hidden;
         background-color: ${props => props.theme.colors.background};
     }
     a{

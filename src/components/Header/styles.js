@@ -17,8 +17,6 @@ export const Navbar = styled.nav`
     img{
         height: 30px;
         margin: 15px 0;
-
-        cursor: pointer;
     }
 `;
 

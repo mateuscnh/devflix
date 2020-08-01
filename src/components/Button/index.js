@@ -12,7 +12,6 @@ const Button = styled.button`
     border-radius: 50%;
     font-size: 20px;
     cursor: pointer;
-    outline: none;
 
     transition: .2s;
 
@@ -21,8 +20,8 @@ const Button = styled.button`
     }
 `
 
-export default function (props) {
+export default function ({ type }) {
     return (
-        <Button type={props.type}><FaPlus /></Button >
+        <Button type={type}><FaPlus /></Button >
     );
 }

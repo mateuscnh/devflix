@@ -18,19 +18,9 @@ export default function ({ children }) {
     return (
         <Slider {...{
             infinite: false,
-            slidesToShow: 4,
-            slidesToScroll: 4,
             speed: 300,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: false,
-                    }
-                }
-            ],
+            variableWidth: true,
+            adaptiveHeight: true,
             nextArrow: <Chevron direction={'right'} color={'#fff'} size={24} />,
             prevArrow: <Chevron direction={'left'} color={'#fff'} size={24} />
         }}>

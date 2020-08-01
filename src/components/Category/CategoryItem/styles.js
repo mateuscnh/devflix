@@ -7,6 +7,7 @@ const animation = keyframes`
 `
 
 export const Container = styled.div` 
+    margin-right: 20px;
     position: relative; 
     cursor: pointer;
 
@@ -21,26 +22,16 @@ export const Container = styled.div`
     
     img{
         border-radius: 6px;
-        width: 300px;
-        object-fit: cover;
-
-        
-    }
-    @media (max-width: 768px){
-        margin:8px;            
-        img{
-            width: 100%; 
-        } 
+        height: 200px;
     }
 `;
 
 export const Description = styled.div`
-    padding: 10px 4%;
+    padding: 10px;
 
     opacity: 0;
     position: absolute;
 
-    width: 300px;
     height: 100%;
 
     background-color: rgba(0, 0, 0, .8);
@@ -49,7 +40,6 @@ export const Description = styled.div`
     transition: .2s;  
 
     @media (max-width: 768px){
-        width: 100%; 
         h1{
             font-size: 16px;
         }               

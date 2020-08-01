@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 
-import BoardContext from '../../pages/Home/context';
+import BoardContext from '../../utils/context';
 
 import { Container, Select, NewCategory } from './styles';
 

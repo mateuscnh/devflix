@@ -12,25 +12,25 @@ const fadeAnimation = keyframes`
 export const BlackFilter = styled.div`
     display: none;
     place-items: center;
+
     position: fixed;
     z-index: ${props => props.zIndex};
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+
+    width: 100%;
+    height: 100%;
+
     background-color: rgba(0, 0, 0, .5);
+    
     opacity: 0;
     animation: ${fadeAnimation} .3s 0s both;
-    
-    @media (max-width: 768px){
-        width: 100%;
-        height: 100%;            
-    }
 `;
 
 export default function ({ className, zIndex, children }) {
     // Filters the mouse events for the 'BlackFilter'
     function handleClick(e) {
+
         if (typeof (e.target.className) !== 'object') {
             if (e.target.className) {
                 if ((e.target.className).indexOf(className) !== -1) {

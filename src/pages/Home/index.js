@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-import BoardContext from './context';
+import BoardContext from '../../utils/context';
 
 import Category from '../../components/Category';
 import NewCategory from '../../components/NewCategory';
@@ -10,7 +10,8 @@ import NewVideo from '../../components/NewVideo';
 import { baseURL } from '../../utils/baseURL';
 
 const Container = styled.div`
-    padding: 50px 4%;
+    padding: 50px 0;
+    padding-left: 4%;
     min-height: 100vh;
 `
 
