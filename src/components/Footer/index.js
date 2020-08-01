@@ -41,7 +41,6 @@ export default function Footer() {
                 <a href="https://www.instagram.com/mateuscnh/" rel="noopener noreferrer" target="_blank"><FaInstagram /></a>
                 <a href="https://www.facebook.com/MateusCnh/" rel="noopener noreferrer" target="_blank"><FaFacebookF /></a>
             </div>
-            <p>© 2020, @mateuscnh. All Rights Reserved.</p>
         </Container>
     );
 }
