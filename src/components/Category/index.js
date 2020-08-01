@@ -18,7 +18,7 @@ export default function Category(props) {
                 <h1>{props.title}</h1>
             </header>
             <Wrapper>
-                <Slider>
+                <Slider slidesToShow={4} speed={300}>
                     {props.videos &&
                         (props.videos).sort((a, b) => sortDescending(a, b)).map(video =>
                             <CategoryItem key={video.id} data={video} />

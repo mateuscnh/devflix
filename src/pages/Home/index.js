@@ -19,7 +19,6 @@ export default function Home() {
 
     useEffect(() => {
         async function loadCategories() {
-
             await fetch(`${baseURL}/categories?_embed=videos`)
                 .then(response => response.json())
                 .then(data => setCategories(data));
