@@ -12,7 +12,7 @@ export const Container = styled.div`
 
     transition: .2s;
     opacity: 0;
-    animation: ${animation} 2s 0s both;  
+    animation: ${animation} .5s 0s both;  
     
     header{
         margin-bottom: 10px;

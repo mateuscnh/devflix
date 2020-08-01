@@ -18,7 +18,7 @@ export default function ({ children }) {
     return (
         <Slider {...{
             infinite: false,
-            speed: 300,
+            speed: 200,
             variableWidth: true,
             adaptiveHeight: true,
             nextArrow: <Chevron direction={'right'} color={'#fff'} size={24} />,
