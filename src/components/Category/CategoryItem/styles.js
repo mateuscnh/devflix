@@ -23,6 +23,9 @@ export const Container = styled.div`
     img{
         border-radius: 6px;
         height: 200px;
+        @media (max-width: 768px){
+            height: 160px;
+        }
     }
 `;
 
