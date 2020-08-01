@@ -24,8 +24,12 @@ export const Container = styled.div`
         width: 300px;
         object-fit: cover;
 
-        @media (max-width: 768px){
-            width: 100%;                
+        
+    }
+    @media (max-width: 768px){
+        margin:8px;            
+        img{
+            width: 100%; 
         } 
     }
 `;
@@ -47,7 +51,7 @@ export const Description = styled.div`
     @media (max-width: 768px){
         width: 100%; 
         h1{
-            font-size: 24px;
+            font-size: 14px;
         }               
     }    
 `;

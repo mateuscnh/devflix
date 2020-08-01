@@ -17,6 +17,24 @@ export const Container = styled.div`
             width: 360px;
         }
     }
+
+    @media (max-width: 768px){
+        width: 80%;
+        h1{
+            font-size: 22px;
+        }
+        form{
+            display: block;
+
+            Input, button{
+                border-radius: 4px;
+                width: 100%;
+            }
+            button{
+                margin-top: 14px;
+            }
+        }          
+    }
 `;
 
 

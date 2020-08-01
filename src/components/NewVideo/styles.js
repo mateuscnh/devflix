@@ -24,7 +24,20 @@ export const Container = styled.div`
             top: 30px;
             left: 8px;
         }  
+        
     }
+    @media (max-width: 768px){
+            width: 80%;
+            height: 90%;
+
+            h1{
+                font-size: 22px;
+            } 
+            
+            select, svg{
+                width: 100%;
+            }           
+        }
 `;
 
 export const NewCategory = styled(FaPlus)`

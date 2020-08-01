@@ -21,6 +21,11 @@ export const BlackFilter = styled.div`
     background-color: rgba(0, 0, 0, .5);
     opacity: 0;
     animation: ${fadeAnimation} .3s 0s both;
+    
+    @media (max-width: 768px){
+        width: 100%;
+        height: 100%;            
+    }
 `;
 
 export default function ({ className, zIndex, children }) {
