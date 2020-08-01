@@ -17,8 +17,11 @@ A collection of youtube videos about programming. Developing during the [Imersã
 Developed with the following technologies:
 
 - ReactJS
-- React Slick
 - Styled Components
+- React Slick
+- JSON Server no Backend
+</br>
+Backend repositorie (deploy in Heroku): https://github.com/mateuscnh/devflix-backend
 
 </br>
 
