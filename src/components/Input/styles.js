@@ -38,7 +38,6 @@ export const Input = styled.input`
 
     ${({ hasValue }) => {
         if (hasValue.value) {
-            console.log(hasValue.value)
             return css`
             &{
                 background: rgba(0, 0, 0, 0);

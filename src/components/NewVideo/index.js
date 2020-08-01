@@ -9,6 +9,7 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 
 import { baseURL } from '../../utils/baseURL';
+import clearInputs from '../../utils/clearInputs';
 
 export default function () {
     const { categories, setCategories } = useContext(BoardContext);
@@ -62,10 +63,10 @@ export default function () {
 
             document.querySelector('.newVideo').style.display = 'none';
             document.querySelector('body').style.overflow = 'auto';
-            videoTitle.value = '';
-            videoURL.value = '';
+
+            clearInputs();
         } else {
-            alert('Informe todos os dados')
+            alert('Preencha todos os dados corretamente!');
         }
     }
 
@@ -74,7 +75,7 @@ export default function () {
     }
 
     function isUrlValid(userInput) {
-        const url = userInput.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
+        const url = userInput.match(/(http(s)?:\/\/.)?(www\.)?(youtube)\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
         return url !== null;
     }
 

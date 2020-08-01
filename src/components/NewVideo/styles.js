@@ -55,7 +55,7 @@ export const Select = styled.select`
     outline: none;
     color: ${props => props.theme.colors.text};
 
-    transition: .1s;
+    transition: .2s;
 
     :focus{
         background: rgba(0, 0, 0, 0);

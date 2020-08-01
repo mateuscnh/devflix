@@ -9,6 +9,7 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 
 import { baseURL } from '../../utils/baseURL';
+import clearInputs from '../../utils/clearInputs';
 
 export default function () {
     const { categories, setCategories } = useContext(BoardContext);
@@ -35,9 +36,9 @@ export default function () {
                 .catch(err => console.log(err))
 
             document.querySelector('.newCategory').style.display = 'none';
-            categoryName.value = '';
+            clearInputs();
         } else {
-            alert('Informe algum nome');
+            alert('Preencha todos os dados corretamente!');
         }
     }
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
+import clearInputs from '../../utils/clearInputs';
+
 const fadeAnimation = keyframes`  
     to{
         opacity: 1;
@@ -31,6 +33,7 @@ export default function ({ className, zIndex, children }) {
                     if (className === 'newVideo') {
                         document.querySelector('body').style.overflow = 'auto';
                     }
+                    clearInputs();
                 }
             }
         }
