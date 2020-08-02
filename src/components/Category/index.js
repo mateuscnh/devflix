@@ -5,13 +5,6 @@ import CategoryItem from './CategoryItem';
 import Slider from '../Slider';
 
 export default function Category(props) {
-    function sortDescending(a, b) {
-        if (a.id > b.id) {
-            return -1;
-        }
-        return 1;
-    }
-
     return (
         <Container>
             <header>
@@ -19,7 +12,7 @@ export default function Category(props) {
             </header>
             <Slider slidesToShow={4} speed={300}>
                 {props.videos &&
-                    (props.videos).sort((a, b) => sortDescending(a, b)).map(video =>
+                    (props.videos).reverse().map(video =>
                         <CategoryItem key={video.id} data={video} />
                     )
                 }
