@@ -37,7 +37,7 @@ export default function Footer() {
             <img src={Logo} alt="" />
             <div className="social">
                 <a href="https://github.com/mateuscnh" rel="noopener noreferrer" target="_blank"><FaGithub /></a>
-                <a href="https://www.linkedin.com/in/mateus-cunha-a886141a5/" rel="noopener noreferrer" target="_blank"><FaLinkedinIn /></a>
+                <a href="https://www.linkedin.com/in/mateuscnh/" rel="noopener noreferrer" target="_blank"><FaLinkedinIn /></a>
                 <a href="https://www.instagram.com/mateuscnh/" rel="noopener noreferrer" target="_blank"><FaInstagram /></a>
                 <a href="https://www.facebook.com/MateusCnh/" rel="noopener noreferrer" target="_blank"><FaFacebookF /></a>
             </div>
