@@ -1,0 +1,314 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Alura Cursos Online"
+    },
+    {
+      "title": "Dev Soltinho",
+      "id": 2
+    },
+    {
+      "title": "Filipe Deschamps",
+      "id": 3
+    },
+    {
+      "title": "Fábio Akita",
+      "id": 4
+    },
+    {
+      "title": "Código Fonte TV",
+      "id": 5
+    },
+    {
+      "title": "Rocketseat",
+      "id": 6
+    },
+    {
+      "title": "Lucas Montano",
+      "id": 8
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "title": "Imersão React Live #01 - Analisando o front-end do Netflix, do Spotify e do Ifood",
+      "url": "https://www.youtube.com/watch?v=Dcn-tVmSxyU",
+      "imageURL": "https://img.youtube.com/vi/Dcn-tVmSxyU/maxresdefault.jpg"
+    },
+    {
+      "categoryId": 5,
+      "title": "A Inteligência Artificial que vai SUBSTITUIR os Programadores NÃO É TUDO ISSO! // Vlog #125",
+      "url": "https://www.youtube.com/watch?v=Eegnj0mY8OY",
+      "imageURL": "https://img.youtube.com/vi/Eegnj0mY8OY/maxresdefault.jpg",
+      "id": 3
+    },
+    {
+      "categoryId": 3,
+      "title": "Lembra Daquela I.A. Que Programava Sozinha? Então...",
+      "url": "https://www.youtube.com/watch?v=Cr89Oz0TWQM",
+      "imageURL": "https://img.youtube.com/vi/Cr89Oz0TWQM/maxresdefault.jpg",
+      "id": 4
+    },
+    {
+      "categoryId": 4,
+      "title": "Começando na Carreira de TI | Faculdade? Níveis de Experiência?",
+      "url": "https://www.youtube.com/watch?v=H84WD_xyj10",
+      "imageURL": "https://img.youtube.com/vi/H84WD_xyj10/maxresdefault.jpg",
+      "id": 5
+    },
+    {
+      "categoryId": 2,
+      "title": "Como fazer validações de formulário com React? #FailFastValidations | Formik Engenharia Reversa #02",
+      "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU",
+      "imageURL": "https://img.youtube.com/vi/-nYNd6EuZHU/maxresdefault.jpg",
+      "id": 7
+    },
+    {
+      "categoryId": 6,
+      "title": "Princípios SOLID em uma API REST com Node.js e TypeScript | Code/Drops #44",
+      "url": "https://www.youtube.com/watch?v=vAV4Vy4jfkc",
+      "imageURL": "https://img.youtube.com/vi/vAV4Vy4jfkc/maxresdefault.jpg",
+      "id": 8
+    },
+    {
+      "categoryId": 8,
+      "title": "Minha opinião sobre Aquela I.A.",
+      "url": "https://www.youtube.com/watch?v=ABXEs47qToU",
+      "imageURL": "https://img.youtube.com/vi/ABXEs47qToU/maxresdefault.jpg",
+      "id": 10
+    },
+    {
+      "categoryId": 4,
+      "title": "Gerenciamento de Memória (Parte 1) | Entendendo Back-end para Iniciantes (Parte 5)",
+      "url": "https://www.youtube.com/watch?v=9AK_1gqEfkQ",
+      "imageURL": "https://img.youtube.com/vi/9AK_1gqEfkQ/maxresdefault.jpg",
+      "id": 11
+    },
+    {
+      "categoryId": 4,
+      "title": "Gerenciamento de Memória (Parte 2) | Entendendo Back-end para Iniciantes (Parte 6)",
+      "url": "https://www.youtube.com/watch?v=DGU1awKrNiA",
+      "imageURL": "https://img.youtube.com/vi/DGU1awKrNiA/maxresdefault.jpg",
+      "id": 12
+    },
+    {
+      "categoryId": 1,
+      "title": "O que é React JS? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=6IuQUgeDPg0",
+      "imageURL": "https://img.youtube.com/vi/6IuQUgeDPg0/maxresdefault.jpg",
+      "id": 13
+    },
+    {
+      "categoryId": 1,
+      "title": "O que é Angular e AngularJS? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=LFlNU30u7d8",
+      "imageURL": "https://img.youtube.com/vi/LFlNU30u7d8/maxresdefault.jpg",
+      "id": 14
+    },
+    {
+      "categoryId": 1,
+      "title": "5 coisas que deixam devs infelizes no trabalho! #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=wajOF9QS4W0",
+      "imageURL": "https://img.youtube.com/vi/wajOF9QS4W0/maxresdefault.jpg",
+      "id": 15
+    },
+    {
+      "categoryId": 1,
+      "title": "4 mitos sobre programação #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=yj0FR_gm0sM",
+      "imageURL": "https://img.youtube.com/vi/yj0FR_gm0sM/maxresdefault.jpg",
+      "id": 16
+    },
+    {
+      "categoryId": 8,
+      "title": "Entrar na programação em 2020 (TU PRECISA VER)",
+      "url": "https://www.youtube.com/watch?v=YtvIIGH8tFE",
+      "imageURL": "https://img.youtube.com/vi/YtvIIGH8tFE/maxresdefault.jpg",
+      "id": 17
+    },
+    {
+      "categoryId": 8,
+      "title": "React Native Avaliando Vaga em \"Startup\"",
+      "url": "https://www.youtube.com/watch?v=wVfVWNk4ZlM",
+      "imageURL": "https://img.youtube.com/vi/wVfVWNk4ZlM/maxresdefault.jpg",
+      "id": 18
+    },
+    {
+      "categoryId": 8,
+      "title": "Programador Deve Ter Projeto no Github Como Este!",
+      "url": "https://www.youtube.com/watch?v=nu8mwGZUBFU",
+      "imageURL": "https://img.youtube.com/vi/nu8mwGZUBFU/maxresdefault.jpg",
+      "id": 19
+    },
+    {
+      "categoryId": 6,
+      "title": "Micro Frontends, Node.js, Unform, StyleSheets, Styled-components, ORMs | #PR 13",
+      "url": "https://www.youtube.com/watch?v=YQr5CIRZ4Og",
+      "imageURL": "https://img.youtube.com/vi/YQr5CIRZ4Og/maxresdefault.jpg",
+      "id": 20
+    },
+    {
+      "categoryId": 6,
+      "title": "Design UX/UI, Home Office, Dev em Cidade Pequena, Portfólio, Insegurança | #PR 11",
+      "url": "https://www.youtube.com/watch?v=RlK8nu_YErc",
+      "imageURL": "https://img.youtube.com/vi/RlK8nu_YErc/maxresdefault.jpg",
+      "id": 21
+    },
+    {
+      "categoryId": 1,
+      "title": "Automação com Python - Hipsters.Talks #19",
+      "url": "https://www.youtube.com/watch?v=s_b79fuuIY4",
+      "imageURL": "https://img.youtube.com/vi/s_b79fuuIY4/maxresdefault.jpg",
+      "id": 22
+    },
+    {
+      "categoryId": 3,
+      "title": "PHP vale a pena? (minha opinião sincera)",
+      "url": "https://www.youtube.com/watch?v=H43fXodv6WY",
+      "imageURL": "https://img.youtube.com/vi/H43fXodv6WY/maxresdefault.jpg",
+      "id": 23
+    },
+    {
+      "categoryId": 5,
+      "title": "15 Filmes que Todo Programador Precisa Assistir // Vlog #110",
+      "url": "https://www.youtube.com/watch?v=4KLiqMe6b9U",
+      "imageURL": "https://img.youtube.com/vi/4KLiqMe6b9U/maxresdefault.jpg",
+      "id": 24
+    },
+    {
+      "categoryId": 5,
+      "title": "Graduado, Técnico ou Autodidata: Quem nós contrataríamos? // CAC #9",
+      "url": "https://www.youtube.com/watch?v=MaglJvzTwJc",
+      "imageURL": "https://img.youtube.com/vi/MaglJvzTwJc/maxresdefault.jpg",
+      "id": 25
+    },
+    {
+      "categoryId": 2,
+      "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+      "url": "https://www.youtube.com/watch?v=jOAU81jdi-c",
+      "imageURL": "https://img.youtube.com/vi/jOAU81jdi-c/maxresdefault.jpg",
+      "id": 26
+    },
+    {
+      "categoryId": 6,
+      "title": "Utilizando Styled Components (CSS-in-JS) no ReactJS e React Native | Diego Fernandes",
+      "url": "https://www.youtube.com/watch?v=R3S8DEzEn6s",
+      "imageURL": "https://img.youtube.com/vi/R3S8DEzEn6s/maxresdefault.jpg",
+      "id": 27
+    },
+    {
+      "categoryId": 4,
+      "title": "Entendendo \"Devops\" para Iniciantes em Programação (Parte 1) | Série \"Começando aos 40\"",
+      "url": "https://www.youtube.com/watch?v=bwO8EZf0gLI",
+      "imageURL": "https://img.youtube.com/vi/bwO8EZf0gLI/maxresdefault.jpg",
+      "id": 28
+    },
+    {
+      "categoryId": 4,
+      "title": "Falando um pouco de MAC, LINUX e WINDOWS | Qual eu devo escolher?",
+      "url": "https://www.youtube.com/watch?v=brIQSA8FtDo",
+      "imageURL": "https://img.youtube.com/vi/brIQSA8FtDo/maxresdefault.jpg",
+      "id": 29
+    },
+    {
+      "categoryId": 4,
+      "title": "O que eu devo estudar? Vou conseguir emprego?",
+      "url": "https://www.youtube.com/watch?v=Ll1uAZ-WRa0",
+      "imageURL": "https://img.youtube.com/vi/Ll1uAZ-WRa0/maxresdefault.jpg",
+      "id": 30
+    },
+    {
+      "categoryId": 3,
+      "title": "Desafio: 10 projetos rápidos para treinar Programação e conseguir um Emprego",
+      "url": "https://www.youtube.com/watch?v=fYR9L2ZmodM",
+      "imageURL": "https://img.youtube.com/vi/fYR9L2ZmodM/maxresdefault.jpg",
+      "id": 31
+    },
+    {
+      "categoryId": 3,
+      "title": "Comecei a receber propostas de emprego MUITO boas por um simples motivo",
+      "url": "https://www.youtube.com/watch?v=qb8yXWFRROg",
+      "imageURL": "https://img.youtube.com/vi/qb8yXWFRROg/maxresdefault.jpg",
+      "id": 32
+    },
+    {
+      "categoryId": 3,
+      "title": "Trabalho Remoto: Vagas Disponíveis HOJE para Ganhar em Dólar e Real (+9 dicas para ser contratado)",
+      "url": "https://www.youtube.com/watch?v=MV3dxDwRgnQ",
+      "imageURL": "https://img.youtube.com/vi/MV3dxDwRgnQ/maxresdefault.jpg",
+      "id": 33
+    },
+    {
+      "categoryId": 2,
+      "title": "O que estudar antes de tentar aprender um Framework JavaScript? (React, Angular, Vue) #ImersaoReact",
+      "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI",
+      "imageURL": "https://img.youtube.com/vi/QzDjdlF1BQI/maxresdefault.jpg",
+      "id": 34
+    },
+    {
+      "categoryId": 2,
+      "title": "O que todo projeto deveria ter? #01 | GitHub PRO + Projetos Organizados + Linter + EditorConfig",
+      "url": "https://www.youtube.com/watch?v=yMRSDdifGW8",
+      "imageURL": "https://img.youtube.com/vi/yMRSDdifGW8/maxresdefault.jpg",
+      "id": 35
+    },
+    {
+      "categoryId": 2,
+      "title": "Qual a diferença entre forEach e map? #DicasDeJavaScript",
+      "url": "https://www.youtube.com/watch?v=JbzcLKiTThk",
+      "imageURL": "https://img.youtube.com/vi/JbzcLKiTThk/maxresdefault.jpg",
+      "id": 36
+    },
+    {
+      "categoryId": 5,
+      "title": "Migrations (Solução para Versionamento de Banco de Dados) // Dicionário do Programador",
+      "url": "https://www.youtube.com/watch?v=HRw1Dcxxu2k",
+      "imageURL": "https://img.youtube.com/vi/HRw1Dcxxu2k/maxresdefault.jpg",
+      "id": 37
+    },
+    {
+      "categoryId": 5,
+      "title": "Opinião: O Mercado de Tecnologia no Governo Bolsonaro // Vlog #80",
+      "url": "https://www.youtube.com/watch?v=9Ie56SvXAX4",
+      "imageURL": "https://img.youtube.com/vi/9Ie56SvXAX4/maxresdefault.jpg",
+      "id": 38
+    },
+    {
+      "categoryId": 6,
+      "title": "Padronizando mensagens de commit do Git | Code/Drops #12",
+      "url": "https://www.youtube.com/watch?v=erInHkjxkL8",
+      "imageURL": "https://img.youtube.com/vi/erInHkjxkL8/maxresdefault.jpg",
+      "id": 39
+    },
+    {
+      "categoryId": 8,
+      "title": "Exercícios de Programação ajuda no teu currículo?",
+      "url": "https://www.youtube.com/watch?v=0EMO5JKwN1o",
+      "imageURL": "https://img.youtube.com/vi/0EMO5JKwN1o/maxresdefault.jpg",
+      "id": 40
+    },
+    {
+      "categoryId": 3,
+      "title": "Como usei JavaScript + Node.js + Socket.io para programar o Frontend e Backend do meu Jogo",
+      "url": "https://www.youtube.com/watch?v=_v6FxZNXvN4",
+      "imageURL": "https://img.youtube.com/vi/_v6FxZNXvN4/maxresdefault.jpg",
+      "id": 41
+    },
+    {
+      "categoryId": 3,
+      "title": "Tutorial de como hospedar o Jogo Multiplayer (Como o servidor VPS da HostGator se saiu?)",
+      "url": "https://www.youtube.com/watch?v=BN5gOkR2JIE",
+      "imageURL": "https://img.youtube.com/vi/BN5gOkR2JIE/maxresdefault.jpg",
+      "id": 42
+    },
+    {
+      "categoryId": 8,
+      "title": "Como Virar Referência na Programação",
+      "url": "https://www.youtube.com/watch?v=VxmEauPKjQo",
+      "imageURL": "https://img.youtube.com/vi/VxmEauPKjQo/maxresdefault.jpg",
+      "id": 43
+    }
+  ]
+}

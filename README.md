@@ -19,9 +19,8 @@ Developed with the following technologies:
 - ReactJS
 - Styled Components
 - React Slick
-- JSON Server in Backend
+- JSON Server in Backend (deploy in Heroku)
 </br>
-Backend repositorie (deploy in Heroku): https://github.com/mateuscnh/devflix-backend
 
 </br>
 
